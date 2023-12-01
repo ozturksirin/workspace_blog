@@ -1,16 +1,17 @@
 # Workspace Blog Application
 
-This project contains a workspace blog application developed using MongoDB, React.js, and Node.js. This application allows users to share articles related to their workspaces.
+This project is a workspace blog application developed using MongoDB, React.js, and Node.js. It enables users to share articles related to their workspaces.
 
 ## Getting Started
 
-These steps include the necessary instructions to run the project files on your local machine.
+These steps contain the necessary instructions to run the project files on your local machine.
 
 ### Requirements
 
 The following software and tools are required to run this project:
 
 - Node.js and npm
+- React
 - MongoDB
 - Git
 
@@ -25,34 +26,44 @@ The following software and tools are required to run this project:
     ```bash
     cd server
     npm install
+    ```
+3. Add a `.env` file with the following content:
+    ```env
+    CONNECTION_URL=mongodb+srv://YourMongoDbPassword@clusters...
+    PORT=5000
+    ```
+    Replace `YourMongoDbPassword` with your actual MongoDB password and connection URL.
+    
+    Then start the server:
+    ```bash
     npm start
     ```
 
-3. To start the client side, follow these steps in a separate terminal window:
+4. To start the client side, follow these steps in a separate terminal window:
     ```bash
     cd client
     npm install
     npm start
     ```
 
-4. You can view the application by going to `http://localhost:3000` in your browser.
+5. You can view the application by going to `http://localhost:3000` in your browser.
 
 ## Usage
 
-This application allows users to read/write articles.
+This application allows users to read and write articles.
 
-The current features in the application include:
+Current features in the application include:
 - Viewing, creating, editing, and deleting articles.
 - Detailed examination of articles.
 
 ## Contributing
 
-If you would like to contribute to this project, please follow these steps:
+If you'd like to contribute to this project, please follow these steps:
 
 1. Fork this repository.
-2. Work on adding new features or fixing bugs.
+2. Implement new features or fix bugs in your forked repository.
 3. Create a Pull Request with a descriptive title and explanation for your changes.
-4. Wait for review! We'll review your improvements and provide feedback on integrating them into the project.
+4. Your changes will be reviewed, and feedback will be provided for integration into the project.
 
 ## License
 
@@ -60,4 +71,4 @@ This project is licensed under the MIT License. For more information, refer to t
 
 ## Contact
 
-If you have any questions or suggestions, please contact us at [ozturksirininfo@gmail.com].
+For any questions or suggestions, please reach out to us at [ozturksirininfo@gmail.com].
